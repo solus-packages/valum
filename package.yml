@@ -1,0 +1,25 @@
+name       : valum
+version    : 0.2.16
+release    : 1
+source     :
+    - https://github.com/valum-framework/valum/archive/v0.2.16.tar.gz : 5fa914a918263b3c8625de4a4bf628ae8de80aca7814d192bbaf1ca82189a330
+license    : LGPL-3.0
+component  : programming
+summary    : Valum is a web micro-framework entirely written in the Vala programming language.
+description: |
+    Valum is a web micro-framework entirely written in the Vala programming language.
+builddeps  :
+    - pkgconfig(ctpl)
+    - pkgconfig(gee-0.8)
+    - pkgconfig(json-glib-1.0)
+    - pkgconfig(libmarkdown)
+    - pkgconfig(libmemcached)
+    - pkgconfig(libsoup-2.4)
+    - fcgi-devel
+    - vala
+setup      : |
+    ./waf configure --prefix=%PREFIX% --libdir=%libdir%
+build      : |
+    ./waf build
+install    : |
+    ./waf install --destdir="$installdir"
