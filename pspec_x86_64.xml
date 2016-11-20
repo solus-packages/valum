@@ -2,8 +2,8 @@
     <Source>
         <Name>valum</Name>
         <Packager>
-            <Name>Joshua Strobl</Name>
-            <Email>joshua@stroblindustries.com</Email>
+            <Name>Stefan Ric</Name>
+            <Email>stfric369@gmail.com</Email>
         </Packager>
         <License>LGPL-3.0</License>
         <PartOf>programming</PartOf>
@@ -18,9 +18,15 @@
         <Description xml:lang="en">Valum is a web micro-framework entirely written in the Vala programming language.
 </Description>
         <PartOf>programming</PartOf>
+        <RuntimeDependencies>
+            <Dependency release="2">valum-devel</Dependency>
+        </RuntimeDependencies>
         <Files>
-            <Path fileType="data">/usr/share/gir-1.0/VSGI-0.2.gir</Path>
-            <Path fileType="data">/usr/share/gir-1.0/Valum-0.2.gir</Path>
+            <Path fileType="library">/usr/lib64/vsgi-0.3/servers/libvsgi-cgi.so</Path>
+            <Path fileType="library">/usr/lib64/vsgi-0.3/servers/libvsgi-fastcgi.so</Path>
+            <Path fileType="library">/usr/lib64/vsgi-0.3/servers/libvsgi-http.so</Path>
+            <Path fileType="library">/usr/lib64/vsgi-0.3/servers/libvsgi-mock.so</Path>
+            <Path fileType="library">/usr/lib64/vsgi-0.3/servers/libvsgi-scgi.so</Path>
         </Files>
     </Package>
     <Package>
@@ -30,7 +36,7 @@
 </Description>
         <PartOf>programming.devel</PartOf>
         <RuntimeDependencies>
-            <Dependency release="1">valum</Dependency>
+            <Dependency release="2">valum</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="header">/usr/include/</Path>
@@ -40,12 +46,12 @@
         </Files>
     </Package>
     <History>
-        <Update release="1">
-            <Date>2016-11-12</Date>
-            <Version>0.2.16</Version>
+        <Update release="2">
+            <Date>2016-11-20</Date>
+            <Version>0.3.0</Version>
             <Comment>Packaging update</Comment>
-            <Name>Joshua Strobl</Name>
-            <Email>joshua@stroblindustries.com</Email>
+            <Name>Stefan Ric</Name>
+            <Email>stfric369@gmail.com</Email>
         </Update>
     </History>
 </PISI>
