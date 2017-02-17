@@ -248,7 +248,6 @@ libvsgi-0.3.so:vsgi_response_write_status_line
 libvsgi-0.3.so:vsgi_response_write_status_line_async
 libvsgi-0.3.so:vsgi_response_write_status_line_finish
 libvsgi-0.3.so:vsgi_server_construct
-libvsgi-0.3.so:vsgi_server_dispatch
 libvsgi-0.3.so:vsgi_server_dispatch_async
 libvsgi-0.3.so:vsgi_server_dispatch_finish
 libvsgi-0.3.so:vsgi_server_fork

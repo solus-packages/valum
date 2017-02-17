@@ -1,10 +1,11 @@
 name       : valum
-version    : 0.3.0
-release    : 2
+version    : 0.3.6
+release    : 3
 source     :
-    - https://github.com/valum-framework/valum/archive/v0.3.0.tar.gz : 6731fb2f2abb6d1bd767b37e7468d78faeb0d0bcdac3d96f8a7f16feda15f473
+    - https://github.com/valum-framework/valum/archive/v0.3.6.tar.gz : 2ac395713dd7cfe4204ac08845c6ff313e2529efe4e727a1c04d81b3ce9a2532
 license    : LGPL-3.0
 component  : programming
+libsplit   : no
 summary    : Valum is a web micro-framework entirely written in the Vala programming language.
 description: |
     Valum is a web micro-framework entirely written in the Vala programming language.
@@ -26,5 +27,5 @@ build      : |
     cd build
     %meson_build
 install    : |
-    cd build 
+    cd build
     %meson_install
