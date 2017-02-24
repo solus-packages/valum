@@ -1,8 +1,8 @@
 name       : valum
-version    : 0.3.6
-release    : 3
+version    : 0.3.7
+release    : 4
 source     :
-    - https://github.com/valum-framework/valum/archive/v0.3.6.tar.gz : 2ac395713dd7cfe4204ac08845c6ff313e2529efe4e727a1c04d81b3ce9a2532
+    - https://github.com/valum-framework/valum/archive/v0.3.7.tar.gz : 0fa5239b6e4def3e7bd74c80f3864a9a38dbee98974c6ae270a10802f9b10142
 license    : LGPL-3.0
 component  : programming
 libsplit   : no
