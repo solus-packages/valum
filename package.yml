@@ -1,6 +1,6 @@
 name       : valum
 version    : 0.3.15
-release    : 9
+release    : 10
 source     :
     - https://github.com/valum-framework/valum/archive/v0.3.15.tar.gz : 226a919a3190fa7692f830dec29e8e14e3b84bcb998daf0aab24a8d5eea46e4f
 license    : LGPL-3.0
@@ -16,10 +16,13 @@ builddeps  :
     - pkgconfig(libmarkdown)
     - pkgconfig(libmemcached)
     - pkgconfig(libsoup-2.4)
+    - pkgconfig(template-glib-1.0)
+    - pkgconfig(luajit)
     - fcgi-devel
-    - vala
+    - python-sphinx-rtd-theme
+    - valadoc
 setup      : |
-    %meson_configure
+    %meson_configure -Denable_examples=true
 build      : |
     %meson_build
 install    : |
