@@ -1,8 +1,8 @@
 name       : valum
-version    : 0.3.13
-release    : 8
+version    : 0.3.15
+release    : 9
 source     :
-    - https://github.com/valum-framework/valum/archive/v0.3.13.tar.gz : b92b2d4e5decaf8eb723308aed1a5d4d463a95d21bafbfaf19a8ba37c7104c03
+    - https://github.com/valum-framework/valum/archive/v0.3.15.tar.gz : 226a919a3190fa7692f830dec29e8e14e3b84bcb998daf0aab24a8d5eea46e4f
 license    : LGPL-3.0
 component  : programming
 libsplit   : no
@@ -17,15 +17,10 @@ builddeps  :
     - pkgconfig(libmemcached)
     - pkgconfig(libsoup-2.4)
     - fcgi-devel
-    - meson
     - vala
 setup      : |
-    mkdir build
-    cd build
-    %meson_configure ..
+    %meson_configure
 build      : |
-    cd build
     %meson_build
 install    : |
-    cd build
     %meson_install
